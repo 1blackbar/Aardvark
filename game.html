@@ -34,7 +34,7 @@
             contentPath: contentPath,
             paths: {
                 // standard web app
-                assetsPaths: [contentPath + 'game.zip'],  // change this to your game (you can specify multiple .zip files for consecutive overwriting patches)
+                assetsPaths: [contentPath + 'game.pak'],  // change this to your game (you can specify multiple .zip files for consecutive overwriting patches)
                 'OpenBOR.zip': contentPath + 'OpenBOR.zip', // OpenBOR engine WASM port
                 'game.css': contentPath + 'game.css',
                 'main.js': contentPath + 'main.js',
@@ -53,9 +53,9 @@
                 // 'fflate.min.js': contentPath + '7ad4ed7534dc9e6865ba74890c03507c8c3efe56bc41ba219146ad91bcc0f03di0',
                 // 'nipplejs.min.js': contentPath + 'e59aec9d79599d970f5ce33a9e39d491e0f8505c65ff87a0ed8b777737c7e7a9i0',
             },
-            assetType: 'zip',
-            baseWidth: 320,
-            baseHeight: 240,
+            assetType: 'pak',
+            baseWidth: 1440,
+            baseHeight: 720,
         };
         const link = document.createElement('link');
         link.rel = 'stylesheet';
